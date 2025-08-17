@@ -22,7 +22,14 @@ You can also use a [virtual environment](https://docs.python.org/3/library/venv.
 3. Run the application
 
 ```bash
+# On Linux, use `python3` instead of `python`
 python main.py
+```
+
+4. Open a browser and enter the url into the browser.
+
+```
+http://127.0.0.1:8080
 ```
 
 ## Acknowledgements
