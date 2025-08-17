@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>MTG Proxy</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}" media="all">
+    </header>
+    <body>
+        <form action="/mtg-proxies" method="POST" enctype="multipart/form-data">
+            <textarea name="text" rows="30" cols="100" spellcheck="false"></textarea>
+            <div>
+                {% if info %}
+                    <p class="center-text"><strong>Info: </strong> {{ info }}</p>
+                {% endif %}
+            </div>
+            <p>If the textarea is filled and you have selected a file then both will be read and output into separate files.</p>
+            <input type="file" name="file"><button type="submit" name="action" value="reset">Reset</button><br>
+            <button type="submit" name="action" value="convert">Convert to Arena format</button>
+            <button type="submit" name="action" value="token">Append tokens to decklist</button>
+            <button type="submit" name="action" value="print">Create a PDF file</button>
+        </form>
+    </body>
+</html>

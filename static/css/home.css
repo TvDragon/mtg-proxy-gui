@@ -1,0 +1,9 @@
+form {
+    width: fit-content; /* shrink-wrap to contents */
+    margin: 0 auto;     /* auto left and right margins */
+}
+
+textarea {
+    display: block;     /* makes margin auto work */
+    margin: 0 auto;     /* center horizontally */
+}
